@@ -10,7 +10,12 @@ module.exports = class DiscordFm extends Plugin {
     const Settings = require('./settings');
     const layout = powercord.pluginManager.get("DiscordFm").settings.get("Layout")
     const color = powercord.pluginManager.get("DiscordFm").settings.get("color")
-    document.body.style.cssText = `--accent-color: #${color.toString(16)}`
+    console.log(color)
+    if (color !== undefined){
+      document.body.style.cssText = `--accent-color: #${color.toString(16)}`
+    }else{
+      document.body.style.cssText = `--accent-color: #d63c3c`
+    }
     if (layout == "compact"){
       this.loadStylesheet('./styles/compact.scss');
     } if (layout == "cozy"){
