@@ -59,6 +59,7 @@ module.exports = class Settings extends React.PureComponent {
                     </ColorPickerInput>
                     <span className={"soon"}>More Customization Coming Soon!</span>
                 </Category>
+                <a href="https://strawpoll.com/hk9qzu4f8" target="_blank">Enter this poll if cool</a>
             </div>
         );
     }
