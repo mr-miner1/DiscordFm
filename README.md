@@ -48,6 +48,6 @@ For suggestions and bug reports you can dm me or put them in the issues tab.
 ### Really like the plugin? Best way to support it is to star the github repo!!
 ## Todo
 
-### v0.2 - Customization
+### v0.2 - More Commands
 
-### v0.3 - More Commands
+### v0.3 - Customization

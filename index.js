@@ -8,10 +8,10 @@ module.exports = class DiscordFm extends Plugin {
     const { TopTracks } = require("./commands/TopTracks")
     const { TopAlbums } = require("./commands/TopAlbums")
     const { ArtistInfo } = require("./commands/ArtistInfo")
+    const { Streak } = require("./commands/Streak")
     const Settings = require('./settings');
     const layout = powercord.pluginManager.get("DiscordFm").settings.get("Layout")
     const color = powercord.pluginManager.get("DiscordFm").settings.get("color")
-    console.log(color)
     if (color !== undefined){
       document.body.style.cssText = `--accent-color: #${color.toString(16)}`
     }else{
@@ -69,6 +69,12 @@ module.exports = class DiscordFm extends Plugin {
       description: "Get information on a specified artist",
       usage: "{c} [optional:artist]",
       executor: (args) => {return ArtistInfo(args)}
+    }),
+    powercord.api.commands.registerCommand({
+      command: "Streak",
+      description: "Get song/album/artist streaks",
+      usage: "{c} [optional:username]",
+      executor: (args) => {return Streak(args)}
     })
 }
 pluginWillUnload() {
@@ -79,6 +85,7 @@ pluginWillUnload() {
     `TopTracks`,
     `TopAlbums`,
     `ArtistInfo`,
+    `Streak`
   ]) {
     powercord.api.commands.unregisterCommand(command);
   }

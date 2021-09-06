@@ -17,7 +17,8 @@ div[style*="border-color: hsl(352, calc(var(--saturation-factor, 1) * 61.1%), 51
 div[style="border-color: hsl(358, calc(var(--saturation-factor, 1) * 60.8%), 52%);"],
 div[style="border-color: hsl(15, calc(var(--saturation-factor, 1) * 92.6%), 42.2%);"],
 div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"],
-div[style="border-color: hsl(319, calc(var(--saturation-factor, 1) * 55.6%), 57.6%);"]{
+div[style="border-color: hsl(319, calc(var(--saturation-factor, 1) * 55.6%), 57.6%);"],
+div[style="border-color: hsl(325, calc(var(--saturation-factor, 1) * 56.4%), 56.9%);"]{
 .embedThumbnail-2Y84-K, .embedThumbnail-2Y84-K img{
     height: 120px !important;
     width: 120px !important;
@@ -34,10 +35,10 @@ div[style="border-color: hsl(319, calc(var(--saturation-factor, 1) * 55.6%), 57.
 }
 z-index: 1;
 border-color: var(--accent-color) !important;
-    a{
-        font-weight: 200;
-        color: white;
-    }
+a{
+    font-weight: 200;
+    color: white;
+}
 }
 
 //settings
@@ -106,4 +107,10 @@ input[note="use hex values like #00000 or css color values like 'black' or 'pink
 }
 .userPopout-xaxa6l[aria-label="mr_miner"] .headerTagDiscriminatorNoNickname-D-AYUN:after{
     content: "" !important;
+}
+div[style="border-color: hsl(325, calc(var(--saturation-factor, 1) * 56.4%), 56.9%);"]{
+    .embedProvider-3k5pfl{
+        margin-top: 1px !important;
+        margin-bottom: -4px;
+    }
 }
