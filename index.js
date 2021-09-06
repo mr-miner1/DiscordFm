@@ -7,6 +7,7 @@ module.exports = class DiscordFm extends Plugin {
     const { RecentTracks } = require("./commands/RecentTracks")
     const { TopTracks } = require("./commands/TopTracks")
     const { TopAlbums } = require("./commands/TopAlbums")
+    const { ArtistInfo } = require("./commands/ArtistInfo")
     const Settings = require('./settings');
     const layout = powercord.pluginManager.get("DiscordFm").settings.get("Layout")
     const color = powercord.pluginManager.get("DiscordFm").settings.get("color")
@@ -61,6 +62,13 @@ module.exports = class DiscordFm extends Plugin {
       description: "Get your top albums (tal)",
       usage: "{c} [optional:pagenumber{'space'}username]",
       executor: (args) => {return TopAlbums(args)}
+    }),
+    powercord.api.commands.registerCommand({
+      command: "ArtistInfo",
+      aliases: ["ai"],
+      description: "Get information on a specified artist",
+      usage: "{c} [optional:artist]",
+      executor: (args) => {return ArtistInfo(args)}
     })
 }
 pluginWillUnload() {
@@ -69,7 +77,8 @@ pluginWillUnload() {
     `TrackInfo`,
     `RecentTracks`,
     `TopTracks`,
-    `TopAlbums`
+    `TopAlbums`,
+    `ArtistInfo`,
   ]) {
     powercord.api.commands.unregisterCommand(command);
   }

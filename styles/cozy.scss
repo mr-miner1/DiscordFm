@@ -7,13 +7,17 @@ div[style="border-color: hsl(352, calc(var(--saturation-factor, 1) * 61.1%), 51.
         margin-top: 0px;
     }
 }
+//artist info
+// div[style="border-color: hsl(319, calc(var(--saturation-factor, 1) * 55.6%), 57.6%);"]{
 
+// }
 //bgimage
 div[style*="border-color: hsl(356, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"], 
 div[style*="border-color: hsl(352, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"], 
 div[style="border-color: hsl(358, calc(var(--saturation-factor, 1) * 60.8%), 52%);"],
 div[style="border-color: hsl(15, calc(var(--saturation-factor, 1) * 92.6%), 42.2%);"],
-div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"]{
+div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"],
+div[style="border-color: hsl(319, calc(var(--saturation-factor, 1) * 55.6%), 57.6%);"]{
 .embedThumbnail-2Y84-K, .embedThumbnail-2Y84-K img{
     height: 120px !important;
     width: 120px !important;
@@ -67,7 +71,7 @@ div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.
     transition: filter 0.5s, font-size 0.1s;
     height: 25px !important;
     width: 25px !important;
-    background-color: var(--brand-experiment);
+    background-color: var(--accent-color);
     position: absolute;
     font-size: 0px;
     background-repeat: no-repeat;

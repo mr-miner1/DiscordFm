@@ -181,7 +181,7 @@ const TrackInfo = async (args) => {
         color:13580394,
         fields:[{
           name: `Song`,
-          value:`${currenttrack_name}`,
+          value:`[${currenttrack_name}](${track_url})`,
           inline:false
         },
         {
@@ -191,7 +191,7 @@ const TrackInfo = async (args) => {
         },
         {
           name: `Artist`,
-          value:`${currenttrack_artist}`,
+          value:`[${currenttrack_artist}](${artist_url})`,
           inline:false
         },
         {
@@ -420,7 +420,7 @@ const TrackInfo = async (args) => {
                       color:13580394,
                       fields:[{
                         name: `Song`,
-                        value:`${track_name}`,
+                        value:`[${track_name}](${track_url})`,
                         inline:false
                       },
                       {
@@ -430,7 +430,7 @@ const TrackInfo = async (args) => {
                       },
                       {
                         name: `Artist`,
-                        value:`${artist_name}`,
+                        value:`[${artist_name}](${artist_url})`,
                         inline:false
                       },
                       {
@@ -499,7 +499,7 @@ const TrackInfo = async (args) => {
                     color:13580394,
                     fields:[{
                       name: `Song`,
-                      value:`${track_name}`,
+                      value:`[${track_name}](${track_url})`,
                       inline:false
                     },
                     {
@@ -509,7 +509,7 @@ const TrackInfo = async (args) => {
                     },
                     {
                       name: `Artist`,
-                      value:`${artist_name}`,
+                      value:`[${artist_name}](${artist_url})`,
                       inline:false
                     },
                     {
@@ -538,7 +538,7 @@ const TrackInfo = async (args) => {
                 },
                 title: `by ${artist_name}`,
                 url: artist_url,
-                description: `(run .FastTrackInfo for unheard tracks)`,
+                // description: `(run .FastTrackInfo for unheard tracks)`,
                 color:13580354,
                 // image:{url:"https://cdn.discordapp.com/avatars/678541597654253600/4cb2b0c198e7d3c1cf213b477a820a0c.png", height: 100, width: 100},
                 footer: {

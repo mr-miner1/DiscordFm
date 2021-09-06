@@ -20,7 +20,7 @@ div[style="border-color: hsl(0, calc(var(--saturation-factor, 1) * 61.1%), 51.6%
     transition: filter 0.5s, font-size 0.1s;
     height: 25px !important;
     width: 25px !important;
-    background-color: var(--brand-experiment);
+    background-color: var(--accent-color);
     position: absolute;
     font-size: 0px;
     background-repeat: no-repeat;
@@ -31,20 +31,38 @@ div[style="border-color: hsl(0, calc(var(--saturation-factor, 1) * 61.1%), 51.6%
     top: 2px;
     border-radius: 3px;
     &:hover{
-        filter: drop-shadow(0px 0px 3px  var(--brand-experiment));
+        filter: drop-shadow(0px 0px 3px  var(--accent-color));
     }
 }
 //recent tracks
 div[style="border-color: hsl(352, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"]{
     max-width: 500px;
 }
-
-
+//artist info
+div[style="border-color: hsl(319, calc(var(--saturation-factor, 1) * 55.6%), 57.6%);"]{
+    .embedTitle-3OXDkz.embedMargin-UO5XwE{
+        margin-top: 0px !important;
+    }
+    .embedTitle-3OXDkz{
+        color: white;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .embedDescription-1Cuq9a{
+        margin-top: 0px;
+        font-size: 13px;
+    }
+    .embedFooter-3yVop-{
+     margin-top: 0px;
+     text-transform: capitalize;
+    }
+}
 div[style*="border-color: hsl(356, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"], 
 div[style*="border-color: hsl(352, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"], 
 div[style="border-color: hsl(358, calc(var(--saturation-factor, 1) * 60.8%), 52%);"],
 div[style="border-color: hsl(15, calc(var(--saturation-factor, 1) * 92.6%), 42.2%);"],
-div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"]{
+div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"],
+div[style="border-color: hsl(319, calc(var(--saturation-factor, 1) * 55.6%), 57.6%);"]{
 .embedThumbnail-2Y84-K, .embedThumbnail-2Y84-K img{
     height: 90px !important;
     width: 90px !important;
@@ -61,17 +79,6 @@ div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.
 }
 z-index: 1;
 border-color: var(--accent-color) !important;
-}
-
-.colorpreview{
-    background-color: var(--accent-color);
-    border-radius: 100px;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    left: 89.7%;
-    justify-self: center;
-    transform: translateY(18px);
 }
 .Restart{
     color: #f04747;
