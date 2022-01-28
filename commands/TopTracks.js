@@ -32,7 +32,7 @@ const TopTracks = async (args) => {
               } else{
                 track_play_time = ""
               }
-          item = `${toptracks[i-1]["@attr"].rank}. ${toptracks[i-1].name}${toptracks[i-1].artist.name} [${toptracks[i-1].playcount}]${track_play_time}`
+          item = `${toptracks[i-1]["@attr"].rank}. ${toptracks[i-1].name} - ${toptracks[i-1].artist.name} [${toptracks[i-1].playcount}]${track_play_time}`
           if (i == 1){
             item0 = item
           } else if (i == 2){

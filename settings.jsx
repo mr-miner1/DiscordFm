@@ -52,7 +52,7 @@ module.exports = class Settings extends React.PureComponent {
                     default = {parseInt("d63c3c", 16)}
                     onChange={
                         (v) => {updateSetting("color", v)
-                        document.body.style.cssText = `--accent-color: #${v.toString(16)}`;
+                        document.body.style.cssText += `--accent-color: #${v.toString(16)}`;
                     }}
                     >
                         Accent Color

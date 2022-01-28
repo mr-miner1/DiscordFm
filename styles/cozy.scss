@@ -1,116 +1,122 @@
-
 //recenttracks
-div[style="border-color: hsl(352, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"]{
-    [class*=embedProvider]{
-        // font-size: 14px;
-        // font-weight: 500;
-        margin-top: 0px;
-    }
+div[style="border-color: hsl(352, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"] {
+  [class*="embedProvider"] {
+    // font-size: 14px;
+    // font-weight: 500;
+    margin-top: 0px;
+  }
 }
 //artist info
 // div[style="border-color: hsl(319, calc(var(--saturation-factor, 1) * 55.6%), 57.6%);"]{
 
 // }
 //bgimage
-div[style*="border-color: hsl(356, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"], 
-div[style*="border-color: hsl(352, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"], 
+div[style*="border-color: hsl(356, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"],
+div[style*="border-color: hsl(352, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"],
 div[style="border-color: hsl(358, calc(var(--saturation-factor, 1) * 60.8%), 52%);"],
 div[style="border-color: hsl(15, calc(var(--saturation-factor, 1) * 92.6%), 42.2%);"],
 div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"],
 div[style="border-color: hsl(319, calc(var(--saturation-factor, 1) * 55.6%), 57.6%);"],
-div[style="border-color: hsl(325, calc(var(--saturation-factor, 1) * 56.4%), 56.9%);"]{
-.embedThumbnail-2Y84-K, .embedThumbnail-2Y84-K img{
+div[style="border-color: hsl(325, calc(var(--saturation-factor, 1) * 56.4%), 56.9%);"] {
+  .embedThumbnail-2nTasl,
+  .embedThumbnail-2nTasl img {
     height: 120px !important;
     width: 120px !important;
-}
-.embedImage-2W1cML, .embedImage-2W1cML img{
+  }
+  .embedImage-2Ynqkh,
+  .embedImage-2Ynqkh img {
     position: absolute;
     height: 100% !important;
     width: 100% !important;
     opacity: 0.6;
     margin: 0;
     z-index: -1;
-    object-fit:cover;
-    border-top-left-radius: 0px; border-bottom-left-radius: 0px;
-}
-z-index: 1;
-border-color: var(--accent-color) !important;
-a{
+    object-fit: cover;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  z-index: 1;
+  border-color: var(--accent-color) !important;
+  a {
     font-weight: 200;
     color: white;
-}
+  }
 }
 
 //settings
-.Restart{
-    color: #f04747;
-    font-weight: 600;
-    font-size: 15px;
-    transform: translateY(-5px);
-    position: absolute;
+.Restart {
+  color: #f04747;
+  font-weight: 600;
+  font-size: 15px;
+  transform: translateY(-5px);
+  position: absolute;
 }
 //track info
-div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"]{
-    a{
-        font-weight: 200;
-        color: white;
-    }
-    .embedProvider-3k5pfl{
-        font-size: 10px;
-        margin-top: 2px;
-        margin-bottom: -5px;
-        // position: absolute;
-        // left: 12px;
-        min-width: 65px;
-    }
-    .embedThumbnail-2Y84-K, .embedThumbnail-2Y84-K img{
-        height: 140px !important;
-        width: 140px !important;
-    }
+div[style="border-color: hsl(340, calc(var(--saturation-factor, 1) * 61.1%), 51.6%);"] {
+  a {
+    font-weight: 200;
+    color: white;
+  }
+  .embedProvider-1GSN0c {
+    font-size: 10px;
+    margin-top: 2px;
+    margin-bottom: -5px;
+    // position: absolute;
+    // left: 12px;
+    min-width: 65px;
+  }
+  .embedThumbnail-2nTasl,
+  .embedThumbnail-2nTasl img {
+    height: 140px !important;
+    width: 140px !important;
+  }
 }
-.lyricsbtn{
-    transition: filter 0.5s, font-size 0.1s;
-    height: 25px !important;
-    width: 25px !important;
-    background-color: var(--accent-color);
-    position: absolute;
-    font-size: 0px;
-    background-repeat: no-repeat;
-    background-image: url("https://media.discordapp.net/attachments/756856464374628352/877957245185458176/microphone.png");
-    background-size: 15px 15px;
-    background-position: center;
-    left: 102%;
-    top: 2px;
-    border-radius: 3px;
-    &:hover{
-        filter: drop-shadow(0px 0px 3px  var(--brand-experiment));
-    }
+.lyricsbtn {
+  transition: filter 0.5s, font-size 0.1s;
+  height: 25px !important;
+  width: 25px !important;
+  background-color: var(--accent-color);
+  position: absolute;
+  font-size: 0px;
+  background-repeat: no-repeat;
+  background-image: url("https://media.discordapp.net/attachments/756856464374628352/877957245185458176/microphone.png");
+  background-size: 15px 15px;
+  background-position: center;
+  left: 102%;
+  top: 2px;
+  border-radius: 3px;
+  &:hover {
+    filter: drop-shadow(0px 0px 3px var(--brand-experiment));
+  }
 }
-input[note="use hex values like #00000 or css color values like 'black' or 'pink'"]{
-    color: var(--accent-color);
-   &:focus{ border-color: var(--accent-color); }
+input[note="use hex values like #00000 or css color values like 'black' or 'pink'"] {
+  color: var(--accent-color);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
-.soon{
-    color: #e392fc;;
+.soon {
+  color: #e392fc;
 }
-.DiscordFmSettings .colorPickerSwatch-5GX3Ve.custom-2SJn4n.noColor-1pdBDm{
-    background-color: var(--accent-color);
-    transition: 0.2s;
+.DiscordFmSettings .colorPickerSwatch-RTUGRR.custom-1Up2lr.noColor-1Oln62 {
+  background-color: var(--accent-color);
+  transition: 0.2s;
 }
 /* coolkid */
-.userPopout-xaxa6l[aria-label="mr_miner"] .headerText-1vVs-U::after{
-    content:"Discord.fm Dev";
-    font-size: 13px;
-    -webkit-text-fill-color: rgb(202, 74, 74);  
-    font-family: var(--font-display);
-    font-weight: 500;
+.userPopout-2j1gM4[aria-label="mr_miner"] .headerText-1-WmDq::after {
+  content: "Discord.fm Dev";
+  font-size: 13px;
+  -webkit-text-fill-color: rgb(202, 74, 74);
+  font-family: var(--font-display);
+  font-weight: 500;
 }
-.userPopout-xaxa6l[aria-label="mr_miner"] .headerTagDiscriminatorNoNickname-D-AYUN:after{
-    content: "" !important;
+.userPopout-2j1gM4[aria-label="mr_miner"]
+  .headerTagDiscriminatorNoNickname-dfcvHa:after {
+  content: "" !important;
 }
-div[style="border-color: hsl(325, calc(var(--saturation-factor, 1) * 56.4%), 56.9%);"]{
-    .embedProvider-3k5pfl{
-        margin-top: 1px !important;
-        margin-bottom: -4px;
-    }
+div[style="border-color: hsl(325, calc(var(--saturation-factor, 1) * 56.4%), 56.9%);"] {
+  .embedProvider-1GSN0c {
+    margin-top: 1px !important;
+    margin-bottom: -4px;
+  }
 }
